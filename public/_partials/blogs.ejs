@@ -1,0 +1,28 @@
+<ul class="blog-list">
+
+<% for(var i=0, blog; blog = blogs[i]; i++) { %>
+  <li>
+    <a href="<%= blog.url %>"><%= blog.name %></a> 
+    <div class="social">
+      <% if (blog.twitter) { %><a href="<%= blog.twitter %>" class="fa fa-twitter-square"><span>Twitter</span></a> <% } %>
+      <% if (blog.facebook) { %><a href="<%= blog.facebook %>" class="fa fa-facebook-square"><span>Facebook</span></a> <% } %>
+      <% if (blog.instagram) { %><a href="<%= blog.instagram %>" class="fa fa-instagram"><span>Instagram</span></a> <% } %>
+      <% if (blog.googleplus) { %><a href="<%= blog.googleplus %>" class="fa fa-google-plus-square"><span>Google+</span></a> <% } %>
+      <% if (blog.tumblr) { %><a href="<%= blog.tumblr %>" class="fa fa-tumblr-square"><span>Tumblr</span></a> <% } %>
+      <% if (blog.linkedin) { %><a href="<%= blog.linkedin %>" class="fa fa-linkedin-square"><span>LinkedIn</span></a> <% } %>
+      <% if (blog.meetup) { %><a href="<%= blog.meetup %>" class="fa fa-calendar"><span>Meetup</span></a> <% } %>
+    </div>
+    <% if (blog.author) { %>
+      <div class="author">
+        <%= blog.author %>
+      </div>
+    <% } %>
+    <% if (blog.author) { %>
+      <div class="description">
+        <%= blog.description %>
+      </div>
+    <% } %>
+  </li>
+<% } %>
+
+</ul>
