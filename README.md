@@ -6,11 +6,13 @@ This is a static website using the [HarpJS framework](http://harpjs.com).
 
 ## How to Contribute
 
-(Include basic instructions on how to contribute soley within Github).
+(Include basic instructions on how to contribute via Github).
 
 ## Theme
 
 This project uses the Helios 1.0 theme modified for Harp as a starting point for the layout of the website. Please see original details below.
+
+---
 
 ### Helios 1.0 by HTML5 UP, modified for Harp
 harp.io | @HarpPlatform
