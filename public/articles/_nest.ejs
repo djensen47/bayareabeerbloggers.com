@@ -6,9 +6,12 @@
         <article id="main" class="special">
           <header>
             <h2><a href="#"><%= title %></a></h2>
-            <span class="byline">
-              <%= date %> by <%= author %>
+            <span class="byline" style="margin-bottom: 1em">
+              <%= description %>
             </span>
+            <h3 class="">
+              <%= author %> &middot; <%= date %>
+            </h3>
           </header>
 
           <%- yield %>
