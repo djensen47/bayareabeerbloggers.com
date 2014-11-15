@@ -1,18 +1,24 @@
 <div id="header">
       
   <!-- Inner -->
+  <div class="inner">
   <% if (current.source == 'index') { %>  
-    <div class="inner">
-      <header>
-        <h1><a href="/" id="logo">Bay Area<br/>Beer Bloggers</a></h1>
-        <hr />
-        <span class="byline">Craft Beer Bloggers in the San Francisco Bay Area</span>
-      </header>
-      <footer>
-        <a href="#banner" class="button circled scrolly">Start</a>
-      </footer>
-    </div> 
-  <% } %>  
+    <header>
+      <h1><a href="/" id="logo">Bay Area<br/>Beer Bloggers</a></h1>
+      <hr />
+      <span class="byline">Craft Beer Bloggers in the San Francisco Bay Area</span>
+    </header>
+    <footer>
+      <a href="#banner" class="button circled scrolly">Start</a>
+    </footer>
+  <% } else { %>
+    <header>
+      <h1>
+        <a href="/">Bay Area Beer Bloggers</a>
+      </h1>
+    </header>
+  <% } %>
+  </div>
 
   <!-- Nav -->
     <nav id="nav">
