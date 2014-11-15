@@ -43,17 +43,6 @@ function excerpt(content) {
         </p>
         <%- partial("_partials/blogs", { blogs: blogs.industry }) %>
       </article>
-<%/*
-      <article class="4u special">
-        <!-- <a href="http://mdomaradzki.deviantart.com/art/Up-is-Down-325005102" class="image featured"><img src="images/pic09.jpg" alt="" /></a> -->
-        <header>
-          <h3><a href="#">Inactive Beer Blogs</a></h3>
-        </header>
-        <p>
-          Just because a blog is no longer active doesn't mean it is not useful. Many old blogs have great stories and photos that stand up to the test of time.
-        </p>
-      </article>
-*/%>
     </div>
   </section>
 
@@ -64,12 +53,18 @@ function excerpt(content) {
 
   <article id="main" class="container special">
     <header>
-      <% var slug = Object.keys(public.articles._data)[0] %>
+      <% var slug = Object.keys(public.articles._data)[0]; %>
+      <% var article = public.articles._data[slug]; %>
       <h3>Latest Article</h3>
-      <h2><a href="/articles/<%= slug %>.html"><%= public.articles._data[slug].title %></a></h2>
-      <span class="byline">
-        <%= public.articles._data[slug].description %>
-      </span>
+      <h2><a href="/articles/<%= slug %>.html"><%= article.title %></a></h2>
+      <% if (article.description) { %>
+        <span class="byline" style="margin-bottom: 1em;">
+          <%= article.description %>
+        </span>
+      <% } %>
+      <h3 class="">
+        <%= article.author %> &middot; <%= article.date %>
+      </h3>
     </header>
     <p>
       <%- excerpt(partial('articles/'+slug)) %>
