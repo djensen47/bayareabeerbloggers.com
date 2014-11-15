@@ -2,7 +2,7 @@
       
   <!-- Inner -->
   <div class="inner">
-  <% if (current.source == 'index') { %>  
+  <% if (current.path[0] == 'index') { %>  
     <header>
       <h1><a href="/" id="logo">Bay Area<br/>Beer Bloggers</a></h1>
       <hr />
@@ -24,8 +24,8 @@
     <nav id="nav">
       <ul>
         <li><a href="/">Home</a></li>
-        <li><a href="/">Articles</a></li>
-        <li><a href="/">Events</a></li>
+        <li><a href="/articles/">Articles</a></li>
+        <!-- <li><a href="/">Events</a></li> -->
         <li><a class="scrolly" href="/#blog-directory">Blog Directory</a></li>
       </ul>
     </nav>
