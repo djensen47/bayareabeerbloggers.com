@@ -1,8 +1,26 @@
 {
+  "website-redesign-2014": {
+    "title": "Website Redesign",
+    "author": "Dave Jensen",
+    "date": "November 15, 2014",
+    "description": "We have updated the website with a new look and feel"
+  },
   "babb-gathering-re-cap-june-8th": {
     "title": "BABB Gathering Re-Cap June 8th",
     "author": "John Heylin",
     "date": "June 13, 2011",
     "description": "The Bay Area Beer Bloggers meet at Gordon Biersch, Public House, and 21st Amendment"
+  },
+  "bay-area-beer-bloggers-our-favorite-beers": {
+    "title": "Our Favorite Beers 2011",
+    "author": "John Heylin",
+    "date": "February 8, 2011",
+    "description": "A detailed list of some of our favorite beers"
+  },
+  "sf-beer-week-opening-gala": {
+    "title": "SF Beer Week Opening Gala 2011",
+    "author": "John Heylin",
+    "date": "February 7, 2011",
+    "description": "The opening event for SF Beer Week 2011 is almost upon us"
   }
 }
