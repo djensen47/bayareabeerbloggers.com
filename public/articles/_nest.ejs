@@ -1,0 +1,21 @@
+<div class="wrapper style1">
+
+  <div class="container">
+    <div class="row">
+      <div class="12u skel-cell-mainContent" id="content">
+        <article id="main" class="special">
+          <header>
+            <h2><a href="#"><%= title %></a></h2>
+            <span class="byline">
+              <%= date %> by <%= author %>
+            </span>
+          </header>
+
+          <%- yield %>
+
+        </article>
+      </div>
+    </div>
+  </div>
+
+</div>

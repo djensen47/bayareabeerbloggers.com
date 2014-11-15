@@ -13,16 +13,16 @@
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet" type="text/css" />
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.dropotron.js"></script>
-    <script src="js/skel.min.js"></script>
-    <script src="js/skel-panels.min.js"></script>
-    <script src="js/init.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.dropotron.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/skel-panels.min.js"></script>
+    <script src="/js/init.js"></script>
     <noscript>
-      <link rel="stylesheet" href="css/skel-noscript.css" />
-      <link rel="stylesheet" href="css/style.css" />
-      <link rel="stylesheet" href="css/style-desktop.css" />
-      <link rel="stylesheet" href="css/style-noscript.css" />
+      <link rel="stylesheet" href="/css/skel-noscript.css" />
+      <link rel="stylesheet" href="/css/style.css" />
+      <link rel="stylesheet" href="/css/style-desktop.css" />
+      <link rel="stylesheet" href="/css/style-noscript.css" />
     </noscript>
     <!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
     <script>
@@ -42,8 +42,12 @@
 
     <!-- Header -->
     <%- partial("_shared/header") %>
-    
-    <%- yield %>  
+
+    <% if(current.path[0] == "articles" && current.source !== 'index') { %>
+      <%- partial(current.path[0] + "/_nest") %>
+    <% } else { %>
+      <%- yield %>
+    <% } %>  
 
     <!-- Footer -->
     <%- partial("_shared/footer") %>
