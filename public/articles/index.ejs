@@ -1,0 +1,55 @@
+<% 
+function excerpt(content) {
+  if(!content || content.indexOf("</p>") == -1) return;
+  else return content.split("<p>")[1].split("</p>")[0];
+}
+%>
+
+<div class="wrapper style1">
+
+  <div class="container">
+    <div class="row">
+      <div class="12u skel-cell-mainContent" id="content">
+        <article id="main" class="special">
+          <header>
+            <h2><a href="/articles/">Articles</a></h2>
+            <span class="byline">
+              Welcome to the Bay Area Beer Bloggers Blog 
+            </span>
+          </header>
+          
+          <% var slugs = Object.keys(public.articles._data); %>
+          <% var i = 0; %>
+          <% for(var slug in public.articles._data) { %>
+            <% if (i%2 === 0) { %>
+              <div class="row">
+            <% } %>
+            <% var article = public.articles._data[slug]; %>
+            
+            <div class="6u article-box">
+              <section>
+                <h3><a href="/articles/<%= slug %>.html"><%= article.title %></a></h3>
+                <p class="sub-header">
+                  <%= article.date %> &middot; <%= article.author %>
+                </p>
+                <p>
+                  <%- excerpt(partial(slug)) %>
+                </p>
+                <p class="more">
+                  <a href="/articles/<%= slug %>.html">Read More</a>
+                </p>
+              <section>
+            </div>
+
+            <% if (i%2 !== 0) { %>
+              </div>
+            <% } %>
+            <% i++; %>
+          <% } %>
+
+        </article>
+      </div>
+    </div>
+  </div>
+
+</div>
