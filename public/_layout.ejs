@@ -37,7 +37,7 @@
     </script>
   </head>
 
-  <% var className = (current.source == 'index') ? "homepage" : current.source; %>  
+  <% var className = (current.path[0] == 'index') ? "homepage" : current.source; %>  
   <body class="<%- className %>">
 
     <!-- Header -->
