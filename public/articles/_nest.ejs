@@ -9,8 +9,14 @@
             <span class="byline" style="margin-bottom: 1em">
               <%= description %>
             </span>
-            <h3 class="">
-              <%= author %> &middot; <%= date %>
+            <h3 class="author-date">
+              <% if (authorUrl) { %>
+                <a href="<%= authorUrl %>" target="_blank"><%= author %></a>
+              <% } else { %>
+                <%= author %>
+              <% } %>
+              &middot; 
+              <%= date %>
             </h3>
           </header>
 
