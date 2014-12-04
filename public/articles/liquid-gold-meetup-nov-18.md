@@ -4,6 +4,6 @@ If you're a beer blogger or you just enjoy craft beer (and like to read about it
 
 Details:
 
-- **Location**: Liquid Gold
+- **Location**: [Liquid Gold](http://www.liquidgoldsf.com)
 - **Address**: 1040 Hyde St., San Francisco, CA 94109
 - **Time**: 7pm until 9pm (or later)
