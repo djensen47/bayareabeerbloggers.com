@@ -1,5 +1,7 @@
 {
 	"globals":{
+	  "authorUrl": "",
+	  "title": "Bay Area Beer Bloggers of San Francisco",
 	  "blogs": {
       "citizen": [{
         "name":"All Over Beer",
